@@ -1,0 +1,20 @@
+@using Quoting_Dojo.Models;
+@model Quoting
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quoting Dojo Assignment!</title>
+</head>
+<body style="width:970px;height:970px;background:radial-gradient(lightpurple, grey, darkblue);">
+    <h1>Welcome to QuotingDojo</h1>
+    <form action="/" method="post">
+        Your name: <input type="input" name="name">
+        Your quote: <input type="textarea" name="quote">
+        <input type="submit" value="Add my quote!">
+    </form>
+    <a href="/quotes"><button>Skip to quotes!</button></a>
+</body>
+</html>

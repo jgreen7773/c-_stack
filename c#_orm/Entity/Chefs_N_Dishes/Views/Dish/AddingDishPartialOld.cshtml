@@ -1,0 +1,13 @@
+@using Chefs_N_Dishes
+@using Chefs_N_Dishes.Models
+@model List<Chef>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+
+            <!-- <span asp-validation-for="ChefId"></span><br>
+            <label asp-for="ChefId">Chef</label><br>
+            <select asp-for="ChefId" style="margin-bottom:255px;width:275px;"> -->
+                @foreach(var chef in Model)
+                {
+                    <option value="@chef.FirstName @chef.LastName">@chef.FirstName @chef.LastName</option>
+                }
+            </select><br>

@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Enter your information</h1>
+    @model User
+    <form asp-action="Privacy" asp-controller="Home" method="POST">
+        <span asp-validation-for="Fname"></span><br>
+        <label asp-for="Fname"></label>
+        <input type="input" asp-for="Fname"><br>
+        <span asp-validation-for="Lname"></span><br>
+        <label asp-for="Lname"></label>
+        <input type="input" asp-for="Lname"><br>
+        <span asp-validation-for="Age"></span><br>
+        <label asp-for="Age"></label>
+        <input type="number" asp-for="Age"><br>
+        <span asp-validation-for="Email"></span><br>
+        <label asp-for="Email"></label>
+        <input type="email" asp-for="Email"><br>
+        <span asp-validation-for="Password"></span><br>
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password"><br>
+        <span asp-validation-for="CPassword"></span><br>
+        <label asp-for="CPassword"></label>
+        <input type="password" asp-for="CPassword"><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>

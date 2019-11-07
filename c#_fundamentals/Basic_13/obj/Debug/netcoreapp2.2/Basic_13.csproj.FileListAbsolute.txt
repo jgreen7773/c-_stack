@@ -1,0 +1,11 @@
+/Users/James/c#_stack/c#_fundamentals/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.deps.json
+/Users/James/c#_stack/c#_fundamentals/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.runtimeconfig.json
+/Users/James/c#_stack/c#_fundamentals/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.runtimeconfig.dev.json
+/Users/James/c#_stack/c#_fundamentals/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.dll
+/Users/James/c#_stack/c#_fundamentals/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.pdb
+/Users/James/c#_stack/c#_fundamentals/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.csprojAssemblyReference.cache
+/Users/James/c#_stack/c#_fundamentals/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.csproj.CoreCompileInputs.cache
+/Users/James/c#_stack/c#_fundamentals/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.AssemblyInfoInputs.cache
+/Users/James/c#_stack/c#_fundamentals/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.AssemblyInfo.cs
+/Users/James/c#_stack/c#_fundamentals/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.dll
+/Users/James/c#_stack/c#_fundamentals/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.pdb

@@ -1,0 +1,11 @@
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/obj/Debug/netcoreapp2.2/Collections_Practice.csprojAssemblyReference.cache
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/obj/Debug/netcoreapp2.2/Collections_Practice.csproj.CoreCompileInputs.cache
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/obj/Debug/netcoreapp2.2/Collections_Practice.AssemblyInfoInputs.cache
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/obj/Debug/netcoreapp2.2/Collections_Practice.AssemblyInfo.cs
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/bin/Debug/netcoreapp2.2/Collections_Practice.deps.json
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/bin/Debug/netcoreapp2.2/Collections_Practice.runtimeconfig.json
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/bin/Debug/netcoreapp2.2/Collections_Practice.runtimeconfig.dev.json
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/bin/Debug/netcoreapp2.2/Collections_Practice.dll
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/bin/Debug/netcoreapp2.2/Collections_Practice.pdb
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/obj/Debug/netcoreapp2.2/Collections_Practice.dll
+/Users/James/c#_stack/c#_fundamentals/Collections_Practice/obj/Debug/netcoreapp2.2/Collections_Practice.pdb

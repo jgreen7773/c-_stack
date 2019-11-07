@@ -1,0 +1,57 @@
+@using dojodachi.Models;
+@model Dachi;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DojoDachi!</title>
+</head>
+<body style="margin:auto;background:radial-gradient(white, yellow, gold);width:970px;height:970px;">
+    <p>
+        <span style="width:222px;margin:100px 5px 10px 5px;">Fullness: @Model.Fullness</span>
+        <span style="width:222px;margin:100px 5px 10px 5px;">Happiness: @Model.Happiness</span>
+        <span style="width:222px;margin:100px 5px 10px 5px;">Meals: @Model.Energy</span>
+        <span style="width:222px;margin:100px 5px 10px 5px;">Energy: @Model.Meals</span>
+    </p>
+    <div style="width:888px;height:555px;border:1px solid green;border-radius:44px;">
+        <img class="CenterImage" src="@Model.Mood"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>@Model.Mood</p>
+    </div>
+    <form action="/playdachi" method="POST" style="width:222px;margin:auto;display:inline-block;">
+        @if(Model.Energy <= 99 && Model.Fullness <= 99 && Model.Happiness <= 99)
+        {
+            <input type="submit" id="Playing" name="Play" value="Play" style="width:222px;margin:5px 5px 10px 5px;display:inline-block;">
+            <input type="hidden" id="Playing" name="Play" value="Play">
+        }
+    </form>
+    <form action="/feeddachi" method="POST" style="width:222px;margin:auto;display:inline-block;">
+        @if(Model.Energy <= 99 && Model.Fullness <= 99 && Model.Happiness <= 99)
+        {
+            <input type="submit" id="Feeding" name="Feed" value="Feed" style="width:222px;margin:5px 5px 10px 5px;display:inline-block;">
+            <input type="hidden" id="Feeding" name="Feed" value="Feed">
+        }
+    </form>
+    <form action="/workdachi" method="POST" style="width:222px;margin:auto;display:inline-block;">
+        @if(Model.Energy <= 99 && Model.Fullness <= 99 && Model.Happiness <= 99)
+        {
+            <input type="submit" id="Working" name="Work" value="Work" style="width:222px;margin:5px 5px 10px 5px;display:inline-block;">
+            <input type="hidden" id="Working" name="Work" value="Work">
+        }
+    </form>
+    <form action="/sleepdachi" method="POST" style="width:222px;margin:auto;display:inline-block;">
+        @if(Model.Energy <= 99 && Model.Fullness <= 99 && Model.Happiness <= 99)
+        {
+            <input type="submit" id="Sleeping" name="Sleep" value="Sleep" style="width:222px;margin:5px 5px 10px 5px;display:inline-block;">
+            <input type="hidden" id="Sleeping" name="Sleep" value="Sleep">
+        }
+    </form>
+    <form action="/resetdachi" method="POST" style="width:222px;margin:auto;display:inline-block;">
+        @if(Model.Fullness < 1 || Model.Happiness < 1 || Model.Energy > 99 && Model.Fullness > 99 && Model.Happiness > 99)
+        {
+            <input type="submit" name="Restart" value="Restart?">
+        }
+    </form>
+</body>
+</html>

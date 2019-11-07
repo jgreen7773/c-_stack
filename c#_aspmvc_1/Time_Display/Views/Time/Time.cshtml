@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DateTime Assignment</title>
+</head>
+<body style="margin:300px 555px 555px 555px;width:970px;height:970px;background-color:seagreen;">
+    @{
+        DateTime CurrentTime = DateTime.Now;
+        <!-- .ToString("MM/dd/yyyy") -->
+        <!-- .ToString("dddd, dd MMMM yyyy") -->
+        <!-- .ToString("dddd, dd MMMM yyyy HH:mm:ss") -->
+        <!-- .ToString("MM/dd/yyyy HH;mm") -->
+        <!-- .ToString("MM/dd/yyyy hh:mm tt") -->
+        <!-- .ToString("MM/dd/yyyy HH:mm:ss") -->
+        <!-- .ToString("MMMM dd") -->
+        <!-- .ToString("ddd, dd MMM yyy HHH':'mm':'ss 'GMT'") -->
+        <!-- .ToString("HH:mm") -->
+        <!-- .ToString("hh:mm tt") -->
+        <!-- .ToString("HH:mm:ss") -->
+        <p style="border: 1px dotted red;display:inline-block;width:200px;height:100px;padding:280px;">
+            @CurrentTime.ToString("MM/dd/yyyy HH:mm:ss")
+        </p>
+    }
+</body>
+</html>

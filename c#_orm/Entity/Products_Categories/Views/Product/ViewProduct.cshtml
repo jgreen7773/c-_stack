@@ -1,0 +1,37 @@
+@using Products_Categories;
+@using Products_Categories.Models;
+@model Association
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products and Categories!</title>
+</head>
+<body style="width:970px;height:970px;margin:auto;background:repeating-radial-gradient(teal,white,grey);">
+    <h1 style="width:970px;display:inline-block;text-align:center;margin-bottom:55px;">
+        <span>Products</span> | 
+        <span><a href="/categories">Categories</a></span>
+    </h1>
+    <div style="width:463px;height:777px;vertical-align:top;display:inline-block;padding:10px;">
+        <h2 style="width:450px;border-bottom:2px solid black;">@ViewBag.DisplayProductName</h2>
+        <h2 style="width:450px;height:44px;">Categories:</h2>
+        @foreach (var product in @ViewBag.CategoryOfProduct)
+        {
+            <li>@product.CategoryName</li>
+        }
+    </div>
+    <form action="/addproductcategory/@ViewBag.DisplayProduct.ProductId" method="POST" style="width:463px;height:777px;border-left:1px dotted black;display:inline-block;padding:10px;">
+        <h2 style="width:450px;display:inline-block;border-bottom:2px solid black">Add Category:</h2>
+        <select asp-for="CategoryId">
+        @foreach (var category in @ViewBag.AllCategoriesList)
+        {
+            <option value="@category.CategoryId">@category.CategoryName</option>
+        }
+        </select>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>

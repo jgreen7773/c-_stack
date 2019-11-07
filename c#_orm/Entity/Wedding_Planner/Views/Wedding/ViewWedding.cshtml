@@ -1,0 +1,24 @@
+@using Wedding_Planner.Models;
+@model Wedding
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plan a Wedding!</title>
+</head>
+<body style="background:linear-gradient(to top left, maroon, brown, maroon);margin:auto;width:970px;height:970px;">
+    <h1 style="width:555px;display:inline-block;text-align:center;margin-bottom:55px;">@Model.WedderOne and @Model.WedderTwo's wedding</h1>
+    <a href="/Dashboard" style="display:inline-block;width:111px;">DashBoard</a>
+    <form action="/LoggingOut" method="POST" style="display:inline-block;width:111px;"><input type="submit" value="Log Out"></form>
+    <h2>@Model.WeddingDate</h2>
+    <h2>Guests:</h2>
+    <ul>
+        @foreach (Association guest in Model.GuestsAttending)
+        {
+            <li>@guest.AGuest.FirstName @guest.AGuest.LastName</li>
+        }
+    </ul>
+</body>
+</html>

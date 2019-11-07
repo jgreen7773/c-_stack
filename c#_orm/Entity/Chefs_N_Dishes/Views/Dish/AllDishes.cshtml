@@ -1,0 +1,40 @@
+@using Chefs_N_Dishes
+@using Chefs_N_Dishes.Models
+@model List<Dish>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Dishes!</title>
+</head>
+<body style="margin:auto;">
+    <h1 style="width:822px;display:inline-block;text-align:center;margin-bottom:55px;">
+        <span><a href="/AllChefs">Chefs</a></span> | 
+        <span>Dishes</span>
+    </h1>
+    <a href="/AddDish" style="display:inline-block;width:111px;">Add a Dish</a>
+    <h2 style="width:555px;display:inline-block;border-bottom:2px solid black;margin-right:222px;padding-bottom:15px;padding-left:33px;margin-left:12px;">Yum, take a look at our tasty dishes!</h2>
+    <table style="width:933px;height:33px;margin:auto;border:2px solid black;overflow:scroll;">
+        <tr style="height:44px;background-color:rgba(188,222,111,55);">
+            <th style="width:275px;border:1px dotted black;">Name</th>
+            <th style="width:222px;border:1px dotted black;">Chef</th>
+            <th style="width:44px;border:1px dotted black;">Tastiness</th>
+            <th style="width:55px;border:1px dotted black;">Calories</th>
+            <th style="width:333px;border:1px dotted black;">Description</th>
+        </tr>
+    @foreach(var dish in Model)
+    {
+        <tr style="height:33px;">
+            <td style="width:275px;border:1px dotted black;">@dish.DishName</td>
+            <td style="width:222px;border:1px dotted black;">@dish.Chef</td>
+            <td style="width:44px;border:1px dotted black;">@dish.Tastiness</td>
+            <td style="width:55px;border:1px dotted black;">@dish.Calories</td>
+            <td style="width:333px;border:1px dotted black;">@dish.Description</td>
+        </tr>
+    }
+    </table>
+</body>
+</html>

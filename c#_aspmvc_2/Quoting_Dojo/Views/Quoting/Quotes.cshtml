@@ -1,0 +1,34 @@
+@using Quoting_Dojo.Models;
+@model List<Quoting>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quoting Dojo Assignment!</title>
+</head>
+<body style="width:970px;height:970px;background:radial-gradient(lightpurple, grey, darkblue);">
+    <h2>Here are the awesome quotes!</h2>
+    <ul style="height:77px;width:950px;border-bottom:1px solid black;padding:5px;">
+    <!-- @{
+        foreach (var quoted in Model)
+        {
+            <li style="margin-bottom:5px;">"@quoted["Name"]"</li>
+            <ul>
+                <li style="text-align:center;margin-top:15px;list-style-type:dash;">- @quoted.Name at @quoted.created_at @quoted.updated_at</li>
+            </ul>
+        }
+    } -->
+    @{
+        foreach (var quoted in Model)
+        {
+            <li style="margin-bottom:5px;">@quoted.Quote</li>
+            <ul>
+                <li style="text-align:center;margin-top:15px;list-style-type:dash;">- @quoted.Name at @quoted.created_at @quoted.updated_at</li>
+            </ul>
+        }
+    }
+    </ul>
+</body>
+</html>

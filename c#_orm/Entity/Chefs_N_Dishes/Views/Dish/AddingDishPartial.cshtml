@@ -1,0 +1,9 @@
+@using Chefs_N_Dishes
+@using Chefs_N_Dishes.Models
+@model List<Chef>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+
+                @foreach(var chef in Model)
+                {
+                    <option value="@chef.FirstName @chef.LastName">@chef.FirstName @chef.LastName</option>
+                }

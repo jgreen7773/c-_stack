@@ -1,0 +1,39 @@
+@using Chefs_N_Dishes
+@using Chefs_N_Dishes.Models
+@model List<Chef>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Chefs!</title>
+</head>
+<body style="margin:auto;">
+    <h1 style="width:822px;display:inline-block;text-align:center;margin-bottom:55px;">
+        <span>Chefs</span> | 
+        <span><a href="/AllDishes">Dishes</a></span>
+    </h1>
+    <a href="/AddChef" style="display:inline-block;width:111px;">Add a Chef</a>
+    <h2 style="width:555px;display:inline-block;border-bottom:2px solid black;margin-right:222px;padding-bottom:15px;padding-left:33px;margin-left:12px;">Check out our roster of Chefs!</h2>
+    <table style="width:933px;height:33px;margin:auto;border:2px solid black;overflow:scroll;">
+        <tr style="height:44px;background-color:rgba(188,222,111,55);">
+            <th style="width:444px;border:1px dotted black;">Name</th>
+            <th style="width:100px;border:1px dotted black;">Age</th>
+            <th style="width:233px;border:1px dotted black;">Total Dishes Created</th>
+        </tr>
+@{
+    
+    @foreach(var chef in Model)
+    {
+        <tr style="height:33px;">
+            <td style="width:444px;border:1px dotted black;">@chef.FirstName @chef.LastName</td>
+            <td style="width:100px;border:1px dotted black;">@chef.BirthDate</td>
+            <td style="width:233px;border:1px dotted black;">@chef.ListDishes.Count</td>
+        </tr>
+    }
+}
+    </table>
+</body>
+</html>

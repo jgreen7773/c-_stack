@@ -1,0 +1,31 @@
+@using Wedding_Planner.Models;
+@model Wedding
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Congratulations!</title>
+</head>
+<body style="background:linear-gradient(to top left, maroon, brown, maroon);margin:auto;width:970px;height:970px;">
+    <h1 style="width:555px;display:inline-block;text-align:center;margin-bottom:55px;">PLACEHOLDERS Wedding</h1>
+    <a href="/Dashboard" style="display:inline-block;width:111px;">DashBoard</a>
+    <form action="/LoggingOut" method="POST" style="display:inline-block;width:111px;"><input type="submit" value="Log Out"></form>
+    <form asp-action="ProcessPlanWedding" asp-controller="Wedding" method="POST">
+        <span asp-validation-for="WedderOne"></span><br>
+        <label asp-for="WedderOne">Wedder One</label><br>
+        <input type="input" asp-for="WedderOne"><br>
+        <span asp-validation-for="WedderTwo"></span><br>
+        <label asp-for="WedderTwo">Wedder Two</label><br>
+        <input type="input" asp-for="WedderTwo"><br>
+        <span asp-validation-for="WeddingDate"></span><br>
+        <label asp-for="WeddingDate">Date</label><br>
+        <input type="date" asp-for="WeddingDate"><br>
+        <span asp-validation-for="WeddingAddress"></span><br>
+        <label asp-for="WeddingAddress">Wedding Address</label><br>
+        <input type="input" asp-for="WeddingAddress"><br><br>
+        <input type="submit" value="Create Wedding">
+    </form>
+</body>
+</html>

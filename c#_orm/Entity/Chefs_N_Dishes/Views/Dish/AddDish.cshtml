@@ -1,0 +1,53 @@
+@using Chefs_N_Dishes
+@using Chefs_N_Dishes.Models
+@model Dish
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recommend a Dish!</title>
+</head>
+<body style="margin:auto;">
+    <h1 style="text-align:center;">Add a Dish!</h1>
+    <a href="/AllChefs">Home</a>
+    <form asp-action="AddingDish" asp-controller="Dish" method="POST" style="border:1px dotted black;">
+        <div style="display:inline-block;width:400px;margin-top:30px;height:555px;text-align:center;vertical-align:top;margin-left:20px;">
+            <span asp-validation-for="DishName"></span><br>
+            <label asp-for="DishName">Name of Dish</label><br>
+            <input type="input" asp-for="DishName"><br>
+            <span asp-validation-for="Calories"></span><br>
+            <label asp-for="Calories">Calorie Amount</label><br>
+            <input type="input" asp-for="Calories"><br>
+            <span asp-validation-for="Description"></span><br>
+            <label asp-for="Description">Description</label><br>
+            <input type="textarea" asp-for="Description" style="height:180px;width:388px;"><br>
+        </div>
+        <div style="display:inline-block;width:300px;margin-top:30px;height:555px;text-align:center;vertical-align:top;">
+            <span asp-validation-for="ChefId"></span><br>
+            <label asp-for="ChefId">Chef</label><br>
+            <select asp-for="ChefId" style="margin-bottom:255px;width:275px;">
+                @foreach(var chef in ViewBag.ListChefs)
+                {
+                    <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
+                }
+            </select><br>
+            <input type="submit" value="Add Dish!">
+        </div>
+        <div style="display:inline-block;width:200px;margin-top:30px;height:333px;text-align:center;">
+            <span asp-validation-for="Tastiness"></span><br>
+            <label asp-for="Tastiness">Tastiness</label>
+            <select asp-for="Tastiness" style="width:100px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

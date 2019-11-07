@@ -1,0 +1,11 @@
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/obj/Debug/netcoreapp2.2/Deck_Of_Cards.csprojAssemblyReference.cache
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/obj/Debug/netcoreapp2.2/Deck_Of_Cards.csproj.CoreCompileInputs.cache
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/obj/Debug/netcoreapp2.2/Deck_Of_Cards.AssemblyInfoInputs.cache
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/obj/Debug/netcoreapp2.2/Deck_Of_Cards.AssemblyInfo.cs
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/bin/Debug/netcoreapp2.2/Deck_Of_Cards.deps.json
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/bin/Debug/netcoreapp2.2/Deck_Of_Cards.runtimeconfig.json
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/bin/Debug/netcoreapp2.2/Deck_Of_Cards.runtimeconfig.dev.json
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/bin/Debug/netcoreapp2.2/Deck_Of_Cards.dll
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/bin/Debug/netcoreapp2.2/Deck_Of_Cards.pdb
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/obj/Debug/netcoreapp2.2/Deck_Of_Cards.dll
+/Users/James/c#_stack/c#_oop/Deck_Of_Cards/obj/Debug/netcoreapp2.2/Deck_Of_Cards.pdb

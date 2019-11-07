@@ -1,0 +1,33 @@
+@using Chefs_N_Dishes
+@using Chefs_N_Dishes.Models
+@model Chef
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Are You a Chef?</title>
+</head>
+<body style="margin:auto;">
+    <h1 style="text-align:center;">Add a Chef!</h1>
+    <a href="/AllChefs">Home</a>
+    <form asp-action="AddingChef" asp-controller="Chef" method="POST" style="border:1px dotted black;margin:auto;">
+        <div style="display:inline-block;width:444px;margin-top:30px;height:333px;text-align:center;vertical-align:top;">
+            <span asp-validation-for="FirstName"></span><br>
+            <label asp-for="FirstName">First Name</label><br>
+            <input type="input" asp-for="FirstName"><br>
+            <span asp-validation-for="LastName"></span><br>
+            <label asp-for="LastName">Last Name</label><br>
+            <input type="input" asp-for="LastName"><br>
+        </div>
+        <div style="display:inline-block;width:444px;margin-top:30px;height:333px;text-align:center;">
+            <span asp-validation-for="BirthDate"></span><br>
+            <label asp-for="BirthDate">Date of Birth</label><br>
+            <input type="date" asp-for="BirthDate" style="margin-bottom:33px;"><br>
+            <input type="submit" value="Add Chef!">
+        </div>
+    </form>
+</body>
+</html>

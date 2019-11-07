@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+@using Dojo_Survey.Models
+@model SurveyUser
+<form asp-action="displaysurvey" asp-controller="Survey" method="POST" style="width:888px;height:777px;border:2px solid gold;border-radius:50px;padding:30px;">
+    <span asp-validation-for="name"></span><br>
+    <label asp-for="name"></label>
+    Your Name: <input type="input" asp-for="name"><br>
+    <span asp-validation-for="location"></span><br>
+    <label asp-for="location"></label>
+    Dojo Location: <select asp-for="location">
+        <option>Select Location</option>
+        <option value="Seattle">Seattle</option>
+        <option value="Dallas">Dallas Texas</option>
+        <option value="Kansas City">Kansas City</option>
+        <option value="Mystical Swamp">Mystical Swamp</option>
+    </select><br>
+    <span asp-validation-for="language"></span><br>
+    <label asp-for="language"></label>
+    Favorite Language: <select asp-for="language">
+        <option>Select Language</option>
+        <option value="Python">Python</option>
+        <option value="C#">C#</option>
+        <option value="MEAN">MEAN</option>
+        <option value="ReactJS">ReactJS</option>
+    </select><br>
+    <p>Comment (optional):</p>
+    <span asp-validation-for="comments"></span><br>
+    <label asp-for="comments"></label>
+    <input type="textarea" asp-for="comments"><br>
+    <input type="submit" value="Submit">
+</form>

@@ -1,0 +1,27 @@
+@using CRUDelicious.Models;
+@model Dishes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUDelicious!</title>
+</head>
+<body style="background-image:url ('124.jpg');margin:auto;width:970;height:auto;">
+    <a href="/">Home</a>
+    <div style="width:555px;height:100px;border-bottom:1px solid black;margin-bottom:55px;">
+    <h1>@Model.Name</h1>
+    <h3>@Model.Chef</h3>
+    </div>
+    <!-- <p>PLACEHOLDER HERE Description</p> -->
+    <p>Calories: <span>@Model.Calories</span></p>
+    <p>Tastiness: <span>@Model.Tastiness</span></p>
+    <p>Description:<br><br><span style="margin-left:55px;">@Model.Description</span></p>
+    <div style="display:block;height:175px;border-bottom:1px solid black;margin-bottom:33px;"></div>
+    <form action="/Delete/@Model.DishId" method="POST" style="margin-right:55px;display:inline-block;">
+        <input type="submit" value="Delete">
+    </form>
+    <a href="/EditDish/@Model.DishId" style="margin-left:55px;display:inline-block;"><button>Edit</button></a>
+</body>
+</html>

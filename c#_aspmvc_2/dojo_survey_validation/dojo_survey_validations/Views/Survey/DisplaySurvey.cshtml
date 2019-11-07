@@ -1,0 +1,13 @@
+@using dojo_survey_validations.Models
+@model List<SurveyUser>;
+    <div style="width:888px;height:777px;border:2px solid gold;border-radius:50px;padding:30px;">
+        <h2 style="margin-bottom:30px;">Submitted Info</h2>
+        @foreach(SurveyUser person in Model)
+        {
+            <p>Your Name:<span>@person.Name</span></p>
+            <p>Dojo Location:<span>@person.Location</span></p>
+            <p>Favorite Language:<span>@person.Language</span></p>
+            <p>Comment:<span>@person.Comments</span></p>
+        }
+        <a href="/"><button>Go Back</button></a>
+    </div>

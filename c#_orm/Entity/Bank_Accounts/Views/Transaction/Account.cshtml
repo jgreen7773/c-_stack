@@ -1,0 +1,37 @@
+@using Bank_Accounts.Models;
+@model Transaction
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Account</title>
+</head>
+<body style="background:linear-gradient(to top left, blue, lightblue, blue);margin:auto;width:970px;height:970px;">
+        <h1 style="width:444px;display:inline-block;">Welcome, @ViewBag.DisplayUser</h1>
+        <p style="width:444px;display:inline-block;">Current Balance: <span>@ViewBag.DisplayBalance</span></p>
+        <a href="/LoggingOut" style="text-align:right;display:block;">Logout</a>
+    <form asp-action="ProcessTransaction" asp-controller="Transaction" method="POST">
+        <span asp-validation-for="Amount"></span><br>
+        <label asp-for="Amount">Deposit/Withdraw:</label><br>
+        <input type="number" asp-for="Amount" style="height:31.9px;margin-bottom:-2px;">
+        <input type="submit" value="Make Transaction!" style="height:30px;margin-left:44px;margin-top:-1px;">
+    </form>
+    <h2 style="margin-top:15px;width:450px;display:inline-block;height:55px;border-bottom:1px dotted black;">Here Are Your Transactions</h2>
+    <p>@ViewBag.InsufficientAmount</p>
+    <table style="width:950px;height:auto;border:2px solid black;overflow:scroll;margin-top:33px;">
+        <tr style="width:950px;height:33px;">
+            <th style="width:450px;height:33px;border:1px dotted black;">Amount</th>
+            <th style="width:500px;height:33px;border:1px dotted black;">Date</th>
+        </tr>
+        @foreach (var i in ViewBag.ListUsersTransactions)
+        {
+            <tr style="width:950px;height:33px;">
+                <td style="width:500px;height:33px;border:1px dotted black;">@i.Amount</td>
+                <td style="width:500px;height:33px;border:1px dotted black;">@i.CreatedAt</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

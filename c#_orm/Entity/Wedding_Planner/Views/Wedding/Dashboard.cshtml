@@ -1,0 +1,47 @@
+@using Wedding_Planner.Models;
+@model List<Wedding>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+</head>
+<body style="background:linear-gradient(to top left, maroon, brown, maroon);margin:auto;width:970px;height:970px;">
+    <h1 style="width:555px;display:inline-block;text-align:center;margin-bottom:55px;">Welcome to the Wedding Planner</h1>
+    <form action="/LoggingOut" method="POST" style="display:inline-block;width:111px;"><input type="submit" value="Log Out"></form>
+    <table style="width:933px;height:33px;margin:auto;border:2px solid black;overflow:scroll;">
+        <tr style="height:44px;background-color:rgba(188,222,111,55);">
+            <th style="width:444px;border:1px dotted black;">Wedding</th>
+            <th style="width:444px;border:1px dotted black;">Date</th>
+            <th style="width:100px;border:1px dotted black;">Guest</th>
+            <th style="width:233px;border:1px dotted black;">Action</th>
+        </tr>
+    @foreach (Wedding ceremony in Model)
+    {
+        <tr style="height:33px;">
+            <td style="width:444px;border:1px dotted black;"><a href="/ViewWedding/@ceremony.WeddingId">@ceremony.WedderOne & @ceremony.WedderTwo</a></td>
+            <td style="width:233px;border:1px dotted black;">@ceremony.WeddingDate</td>
+            <td style="width:100px;border:1px dotted black;">@ceremony.GuestsAttending.Count</td>
+        @foreach (Association i in @ViewBag.AllAssociations)
+        {
+            @if (@ViewBag.LoggedUserId == @ceremony.UserId)
+            {
+                <td style="width:100px;border:1px dotted black;"><a href="/Delete/@ceremony.WeddingId">Delete</a></td>
+            }
+            else if (@ViewBag.LoggedUserId == @i.UserId && @ceremony.GuestsAttending.Count != 0 && @ceremony.UserId != @ViewBag.LoggedUserId)
+            {
+                <td style="width:233px;border:1px dotted black;"><a href="/ProcessLeaveWedding/@ceremony.WeddingId">Un-RSVP</a></td>
+            }
+            else if (@ViewBag.LoggedUserId != @ceremony.UserId)
+            {
+                <td style="width:100px;border:1px dotted black;"><a href="/ProcessJoinWedding/@ceremony.WeddingId">RSVP</a></td>
+            }
+        }
+        </tr>
+    }
+    </table>
+    <a href="/PlanWedding">Plan a New Wedding!</a>
+</body>
+</html>

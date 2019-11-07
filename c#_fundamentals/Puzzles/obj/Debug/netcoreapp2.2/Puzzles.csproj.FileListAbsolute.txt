@@ -1,0 +1,11 @@
+/Users/James/c#_stack/c#_fundamentals/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.deps.json
+/Users/James/c#_stack/c#_fundamentals/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.runtimeconfig.json
+/Users/James/c#_stack/c#_fundamentals/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.runtimeconfig.dev.json
+/Users/James/c#_stack/c#_fundamentals/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.dll
+/Users/James/c#_stack/c#_fundamentals/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.pdb
+/Users/James/c#_stack/c#_fundamentals/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.csprojAssemblyReference.cache
+/Users/James/c#_stack/c#_fundamentals/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.csproj.CoreCompileInputs.cache
+/Users/James/c#_stack/c#_fundamentals/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.AssemblyInfoInputs.cache
+/Users/James/c#_stack/c#_fundamentals/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.AssemblyInfo.cs
+/Users/James/c#_stack/c#_fundamentals/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.dll
+/Users/James/c#_stack/c#_fundamentals/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.pdb

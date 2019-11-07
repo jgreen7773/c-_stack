@@ -1,0 +1,6 @@
+/Users/James/c#_stack/c#_aspmvc_2/Quoting_Dojo/obj/Debug/netcoreapp2.2/Quoting_Dojo.csprojAssemblyReference.cache
+/Users/James/c#_stack/c#_aspmvc_2/Quoting_Dojo/obj/Debug/netcoreapp2.2/Quoting_Dojo.csproj.CoreCompileInputs.cache
+/Users/James/c#_stack/c#_aspmvc_2/Quoting_Dojo/obj/Debug/netcoreapp2.2/Quoting_Dojo.RazorAssemblyInfo.cache
+/Users/James/c#_stack/c#_aspmvc_2/Quoting_Dojo/obj/Debug/netcoreapp2.2/Quoting_Dojo.RazorAssemblyInfo.cs
+/Users/James/c#_stack/c#_aspmvc_2/Quoting_Dojo/obj/Debug/netcoreapp2.2/Quoting_Dojo.AssemblyInfoInputs.cache
+/Users/James/c#_stack/c#_aspmvc_2/Quoting_Dojo/obj/Debug/netcoreapp2.2/Quoting_Dojo.AssemblyInfo.cs

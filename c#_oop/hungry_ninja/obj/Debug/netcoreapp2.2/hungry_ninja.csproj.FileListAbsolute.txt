@@ -1,0 +1,11 @@
+/Users/James/c#_stack/c#_oop/hungry_ninja/obj/Debug/netcoreapp2.2/hungry_ninja.csprojAssemblyReference.cache
+/Users/James/c#_stack/c#_oop/hungry_ninja/obj/Debug/netcoreapp2.2/hungry_ninja.csproj.CoreCompileInputs.cache
+/Users/James/c#_stack/c#_oop/hungry_ninja/obj/Debug/netcoreapp2.2/hungry_ninja.AssemblyInfoInputs.cache
+/Users/James/c#_stack/c#_oop/hungry_ninja/obj/Debug/netcoreapp2.2/hungry_ninja.AssemblyInfo.cs
+/Users/James/c#_stack/c#_oop/hungry_ninja/bin/Debug/netcoreapp2.2/hungry_ninja.deps.json
+/Users/James/c#_stack/c#_oop/hungry_ninja/bin/Debug/netcoreapp2.2/hungry_ninja.runtimeconfig.json
+/Users/James/c#_stack/c#_oop/hungry_ninja/bin/Debug/netcoreapp2.2/hungry_ninja.runtimeconfig.dev.json
+/Users/James/c#_stack/c#_oop/hungry_ninja/bin/Debug/netcoreapp2.2/hungry_ninja.dll
+/Users/James/c#_stack/c#_oop/hungry_ninja/bin/Debug/netcoreapp2.2/hungry_ninja.pdb
+/Users/James/c#_stack/c#_oop/hungry_ninja/obj/Debug/netcoreapp2.2/hungry_ninja.dll
+/Users/James/c#_stack/c#_oop/hungry_ninja/obj/Debug/netcoreapp2.2/hungry_ninja.pdb
